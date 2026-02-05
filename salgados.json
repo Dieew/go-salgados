@@ -1,0 +1,58 @@
+{
+  "loja_salgados": [
+    {
+      "id": 1,
+      "nome": "50 salgados mistos + 20 mini churros + 2 molhos + Kuat 1,5L",
+      "descricao": "Pacote com 50 salgados variados, 30 mini churros, 2 molhos e 1,5L de Kuat. Ideal para festas e eventos. Serve 2 a 3 pessoas.",
+      "preco_original": 59.99,
+      "preco_promocional": 49.99,
+      "serve": "2 a 3 pessoas",
+      "disponivel": true
+    },
+    {
+      "id": 2,
+      "nome": "COMBO ALEGRIA 50 salgados mistos + 30 mini churros + Coca-Cola 2L + 2 molhos",
+      "descricao": "Esta embalagem oferece 50 salgados variados, 30 mini churros, uma Coca-Cola de 2L e 2 molhos. Perfeito para encontros e comemorações.",
+      "preco_original": 72.99,
+      "preco_promocional": 52.99,
+      "serve": "2 a 3 pessoas",
+      "disponivel": true
+    },
+    {
+      "id": 3,
+      "nome": "Combo do dia 90 salgados + 6 molhos + Kuat 1,5L",
+      "descricao": "Combo do dia com 90 salgados, 6 molhos e 1,5 litros de Kuat. Uma opção deliciosa e prática para compartilhar momentos especiais.",
+      "preco_original": 72.99,
+      "preco_promocional": 62.99,
+      "serve": "3 a 4 pessoas",
+      "disponivel": true
+    },
+    {
+      "id": 4,
+      "nome": "100 salgados + Coca-Cola 2L + 30 churros Grátis + 2 Molhos",
+      "descricao": "Pacote com 100 salgados, uma Coca-Cola de 2L, 30 churros grátis e 2 molhos. Ideal para reuniões.",
+      "preco_original": 89.90,
+      "preco_promocional": 77.99,
+      "serve": "4 a 5 pessoas",
+      "disponivel": true
+    },
+    {
+      "id": 5,
+      "nome": "COMBO FARTURA 80 salgados + 4 molhos Grátis + Kuat 1,5L",
+      "descricao": "Contém 80 salgados, 4 molhos e uma garrafa de Kuat 1,5L.",
+      "preco_original": 59.99,
+      "preco_promocional": 51.99,
+      "serve": "2 a 3 pessoas",
+      "disponivel": true
+    },
+    {
+      "id": 6,
+      "nome": "Combo Família Brasileira - 100 salgados + 1 refrigerante",
+      "descricao": "100 salgados + 1 refrigerante com 10% de desconto.",
+      "preco_original": null,
+      "preco_promocional": 54.99,
+      "serve": "4 a 5 pessoas",
+      "disponivel": true
+    }
+  ]
+}
