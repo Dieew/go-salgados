@@ -1,22 +1,135 @@
 {
-  "pedido_id": "1001",
-  "data_hora": "2026-02-24T18:30:00Z",
-  "status": "preparando",
-  "cliente": {
-    "nome": "Felipe Silva",
-    "whatsapp": "5511999999999",
-    "endereco_completo": "Avenida Paulista, 1578, Bela Vista, São Paulo - SP",
-    "coordenadas_fixas": { "lat": -23.5614, "lng": -46.6559 } 
+  "configuracoes_sistema": {
+    "nome_marca": "GO Salgados",
+    "regras_de_negocio": {
+      "multiplo_minimo_por_sabor": 10,
+      "mensagem_validacao_sabores": "O cliente pode mesclar os sabores disponíveis, desde que a soma total bata com a quantidade do combo e cada sabor escolhido seja em múltiplos de 10.",
+      "politica_molhos": "Molhos padrão do combo são gratuitos. Molhos extras ou alterações específicas seguem a tabela de preços."
+    }
   },
-  "item_selecionado": {
-    "id": 2,
-    "nome": "COMBO ALEGRIA 50 salgados mistos + 30 mini churros + Coca-Cola 2L + 2 molhos",
-    "preco_promocional": 52.99,
-    "observacao": "Sem kibe, trocar por coxinha. Coca bem gelada."
+  "ingredientes_e_sabores": {
+    "salgados_fritos": [
+      "Enroladinho de Salsicha",
+      "Bolinha de Queijo",
+      "Bolinha Presunto e Queijo",
+      "Bolinha de Carne",
+      "Kibe",
+      "Napolitano",
+      "Coxinha de Frango"
+    ],
+    "churros": [
+      "Churros Doce de Leite"
+    ],
+    "molhos_disponiveis": [
+      "Molho Verde",
+      "Ketchup",
+      "Barbecue",
+      "Molho do Chef"
+    ],
+    "bebidas_disponiveis": [
+      "Coca-Cola 2L",
+      "Kuat 1.5L",
+      "Pepsi 2L",
+      "Fanta 2L",
+      "Guaraná 2L"
+    ]
   },
-  "logistica": {
-    "metodo_pagamento": "Cartão (Levar Máquina)",
-    "taxa_entrega": 7.00,
-    "valor_total_cobrar": 59.99
-  }
+  "cardapio_combos": [
+    {
+      "id": 1,
+      "nome": "Combo 50 Salgados",
+      "descricao": "50 salgados mistos + 20 mini churros + 2 molhos + Kuat 1,5L",
+      "preco_original": 59.99,
+      "preco_promocional": 49.99,
+      "limites_inclusos": {
+        "quantidade_salgados": 50,
+        "quantidade_churros": 20,
+        "quantidade_molhos_gratis": 2,
+        "bebida_padrao": "Kuat 1.5L"
+      },
+      "contem_churros": true,
+      "serve_ate_pessoas": 3,
+      "disponivel": true
+    },
+    {
+      "id": 2,
+      "nome": "COMBO ALEGRIA",
+      "descricao": "50 salgados mistos + 30 mini churros + Coca-Cola 2L + 2 molhos",
+      "preco_original": 72.99,
+      "preco_promocional": 52.99,
+      "limites_inclusos": {
+        "quantidade_salgados": 50,
+        "quantidade_churros": 30,
+        "quantidade_molhos_gratis": 2,
+        "bebida_padrao": "Coca-Cola 2L"
+      },
+      "contem_churros": true,
+      "serve_ate_pessoas": 3,
+      "disponivel": true
+    },
+    {
+      "id": 3,
+      "nome": "Combo do Dia 90",
+      "descricao": "90 salgados + 6 molhos + Kuat 1,5L",
+      "preco_original": 72.99,
+      "preco_promocional": 62.99,
+      "limites_inclusos": {
+        "quantidade_salgados": 90,
+        "quantidade_churros": 0,
+        "quantidade_molhos_gratis": 6,
+        "bebida_padrao": "Kuat 1.5L"
+      },
+      "contem_churros": false,
+      "serve_ate_pessoas": 4,
+      "disponivel": true
+    },
+    {
+      "id": 4,
+      "nome": "Combo 100 Salgados",
+      "descricao": "100 salgados + Coca-Cola 2L + 30 churros Grátis + 2 Molhos",
+      "preco_original": 89.90,
+      "preco_promocional": 77.99,
+      "limites_inclusos": {
+        "quantidade_salgados": 100,
+        "quantidade_churros": 30,
+        "quantidade_molhos_gratis": 2,
+        "bebida_padrao": "Coca-Cola 2L"
+      },
+      "contem_churros": true,
+      "serve_ate_pessoas": 5,
+      "disponivel": true
+    },
+    {
+      "id": 5,
+      "nome": "COMBO FARTURA",
+      "descricao": "80 salgados + 4 molhos Grátis + Kuat 1,5L",
+      "preco_original": 59.99,
+      "preco_promocional": 51.99,
+      "limites_inclusos": {
+        "quantidade_salgados": 80,
+        "quantidade_churros": 0,
+        "quantidade_molhos_gratis": 4,
+        "bebida_padrao": "Kuat 1.5L"
+      },
+      "contem_churros": false,
+      "serve_ate_pessoas": 3,
+      "disponivel": true
+    },
+    {
+      "id": 6,
+      "nome": "Combo Família Brasileira",
+      "descricao": "100 salgados + 1 refrigerante com 10% de desconto.",
+      "preco_original": 61.10,
+      "preco_promocional": 54.99,
+      "limites_inclusos": {
+        "quantidade_salgados": 100,
+        "quantidade_churros": 0,
+        "quantidade_molhos_gratis": 0,
+        "bebida_padrao": "Coca-Cola 2L"
+      },
+      "contem_churros": false,
+      "serve_ate_pessoas": 5,
+      "disponivel": true
+    }
+  ]
 }
